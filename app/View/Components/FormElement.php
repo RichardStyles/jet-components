@@ -6,6 +6,10 @@ use Illuminate\View\Component;
 
 class FormElement extends Component
 {
+    public function __construct(public bool $hasWarning = false)
+    {
+
+    }
     /**
      * Get the view / contents that represent the component.
      *

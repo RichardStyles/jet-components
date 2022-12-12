@@ -71,11 +71,12 @@
         </div>
 
         @php
+            $isGood = false;
             $warning = true;
         @endphp
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
-            <x-form-element :has-warning="$warning">
+            <x-form-element :has-warning="$warning" :is-good="$isGood">
                 <x-slot name="label">
                     <x-jet-label for="email" value="{{ __('Email') }}"/>
                 </x-slot>

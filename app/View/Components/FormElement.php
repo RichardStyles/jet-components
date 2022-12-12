@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class FormElement extends Component
 {
-    public function __construct(public bool $hasWarning = false)
+    public function __construct(public bool $hasWarning = false, public bool $isGood = false)
     {
 
     }

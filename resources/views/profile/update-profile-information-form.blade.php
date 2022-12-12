@@ -51,10 +51,12 @@
                 <x-jet-input-error for="photo" class="mt-2" />
             </div>
         @endif
-
+        @php
+            $isGood = true;
+        @endphp
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
-            <x-form-element>
+            <x-form-element :is-good="$isGood">
                 <x-slot name="label">
                     <x-jet-label for="name" value="{{ __('Name') }}"/>
                 </x-slot>

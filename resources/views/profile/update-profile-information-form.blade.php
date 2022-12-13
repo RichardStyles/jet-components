@@ -52,7 +52,7 @@
             </div>
         @endif
         @php
-            $isGood = true;
+            $isGood = false;
         @endphp
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
@@ -72,7 +72,7 @@
 
         @php
             $isGood = false;
-            $warning = true;
+            $warning = false;
         @endphp
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
